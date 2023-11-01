@@ -1,0 +1,18 @@
+## Google credentials 
+First we have to get Google credentials .
+To get credentials 'if don’t already have them '  go to [Google developer Console](https://console.developers.google.com/) 
+
+>_1)create a new project 
+>
+>2)Select the project and click credentials and the select OAuth client ID
+>
+>3)Now Select Web Application in application type. 
+>
+>4)Input your app name or whatever else you like , in Authorized JavaScript origins add this line`http://localhost:3000 ` 
+and in Authorized redirect URIs field add this line ` http://localhost:3000/auth/google/callback `  and the click to create . 
+>
+>5)Now copy your *Google client ID* and *Google client secret*_
+[Help](https://developers.google.com/adwords/api/docs/guides/authentication)
+
+
+npm start
