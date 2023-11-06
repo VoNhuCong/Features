@@ -1,0 +1,15 @@
+#To install nvm 
+step 1: sudo apt install curl 
+step 2: curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+step 3: source ~/.bashrc   
+
+#To install node 
+step 1: nvm install node
+step 2: nvm install 18.16.0 
+
+#Working with nvm
+nvm ls
+nvm use 18.16.0
+nvm run default--version
+nvm uninstall 18.16.0
+
