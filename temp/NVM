@@ -13,3 +13,5 @@ nvm use 18.16.0
 nvm run default--version
 nvm uninstall 18.16.0
 
+sudo docker run --name mysql -e MYSQL_ROOT_PASSWORD=123456 -dp 127.0.0.1:3306:3306 -v /home/vonhucong/Documents/Mysql:/var/lib/mysql mysql
+
