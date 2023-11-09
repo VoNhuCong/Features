@@ -5,12 +5,18 @@ docker logs mysql --follow
 sudo docker exec -it mysql bash
 mysql -u root -p => enter pass
 
+#to run mysql in linux
 sudo docker run --name mysql \
 	-e MYSQL_ROOT_PASSWORD=123456 \
 	-dp 127.0.0.1:3306:3306 \
 	-v /home/vonhucong/Documents/Mysql:/var/lib/mysql \
 	--restart unless-stopped \ 
 	mysql:8
+
+--restart slways
+
+#to run mysql in window
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=123456 -dp 127.0.0.1:3306:3306 -v D:/ProgramFiles/mysql:/var/lib/mysql --restart unless-stopped mysql:8
 
 --restart slways
 
